@@ -9,8 +9,6 @@
     <router-link to="/portfolio">Portfolio</router-link> |
     <router-link to="/whatido">WhatIDo</router-link> route-->
 
-    <h1 class="animate__animated animate__bounce">An animated element</h1>
-    
     <router-view v-slot="{ Component }">
       <transition name="slide" mode="out-in">
         <component :is="Component" />
