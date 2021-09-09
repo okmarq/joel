@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Home1 from "../views/Home1.vue";
-import About1 from "../views/About1.vue";
+import Home1 from "../components/Home1.vue";
+import About1 from "../components/About1.vue";
 // import About from "../views/About.vue";
 // import Contact from "../views/Contact.vue";
 // import Experience from "../views/Experience.vue";
@@ -15,7 +15,7 @@ const routes = [
     component: Home,
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutRight",
     },
   },
   {
@@ -24,7 +24,7 @@ const routes = [
     component: Home1,
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutRight",
     },
   },
   {
@@ -33,7 +33,7 @@ const routes = [
     component: About1,
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {
@@ -42,7 +42,8 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
