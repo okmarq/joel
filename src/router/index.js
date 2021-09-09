@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../components/Home.vue";
 import Home1 from "../components/Home1.vue";
 import About1 from "../components/About1.vue";
-// import About from "../views/About.vue";
-// import Contact from "../views/Contact.vue";
-// import Experience from "../views/Experience.vue";
-// import Portfolio from "../views/Portfolio.vue";
-// import WhatIDo from "../views/WhatIDo.vue";
+// import About from "../components/About.vue";
+// import Contact from "../components/Contact.vue";
+// import Experience from "../components/Experience.vue";
+// import Portfolio from "../components/Portfolio.vue";
+// import WhatIDo from "../components/WhatIDo.vue";
 
 const routes = [
   {
@@ -43,7 +43,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: "about" */ "../components/About.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
@@ -52,7 +52,7 @@ const routes = [
   {
     path: "/contact",
     name: "Contact",
-    component: () => import("../views/Contact.vue"),
+    component: () => import("../components/Contact.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
@@ -61,7 +61,7 @@ const routes = [
   {
     path: "/experience",
     name: "Experience",
-    component: () => import("../views/Experience.vue"),
+    component: () => import("../components/Experience.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
@@ -70,7 +70,7 @@ const routes = [
   {
     path: "/portfolio",
     name: "Portfolio",
-    component: () => import("../views/Portfolio.vue"),
+    component: () => import("../components/Portfolio.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
@@ -79,7 +79,7 @@ const routes = [
   {
     path: "/whatido",
     name: "WhatIDo",
-    component: () => import("../views/WhatIDo.vue"),
+    component: () => import("../components/WhatIDo.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeInLeft",
