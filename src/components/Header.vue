@@ -12,7 +12,7 @@
       px-2
       sm:px-10
       md:px-20
-      z-10
+      z-20
       shadow-md
     "
   >
