@@ -12,6 +12,8 @@
       px-2
       sm:px-10
       md:px-20
+      z-10
+      shadow-md
     "
   >
     <a class="font-cursive text-xl sm:text-3xl md:text-5xl flex gap-2" href="#">
