@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: { content: ["./public/**/*.html", "./src/**/*.vue"] },
@@ -9,6 +10,13 @@ module.exports = {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
         cursive: ["Lobster"],
         cursiveTwo: ['"Lobster Two"'],
+      },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        primary: "#000066",
+        secondary: "#006600",
+        tertiary: "#660000",
       },
     },
   },
