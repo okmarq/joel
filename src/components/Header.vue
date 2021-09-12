@@ -5,7 +5,7 @@
       top-0
       w-screen
       h-20
-      pri-col
+      bg-primary
       flex
       items-center
       justify-between
@@ -14,11 +14,12 @@
       md:px-20
     "
   >
-    <a class="font-title text-xl sm:text-3xl md:text-5xl" href="#">
-      Lari-Lara
+    <a class="font-cursive text-xl sm:text-3xl md:text-5xl flex gap-2" href="#">
+      <img src="https://img.icons8.com/wired/50/ffffff/informatics.png" />
+      <span class="">Lari-Lara</span>
     </a>
 
-    <div class="font-subtitle block lg:hidden">
+    <div class="font-cursiveTwo block lg:hidden">
       <a href="#">+234 (0) 810-725-0441</a> / <a href="#">okmarq@gmail.com</a>
     </div>
   </header>
