@@ -1,33 +1,47 @@
 <template>
+  <Header />
+
+  <Sidebar />
+
   <div class="content">
-    <router-link to="/home1">Home1</router-link> |
-    <router-link to="/about1">About1</router-link>
+    <!-- <router-link to="/home1">Home1</router-link> | -->
+    <!-- <router-link to="/about1">About1</router-link> -->
     <!-- <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/contact">Contact</router-link> |
     <router-link to="/experience">Experience</router-link> |
     <router-link to="/portfolio">Portfolio</router-link> |
-    <router-link to="/whatido">WhatIDo</router-link> route-->
+    <router-link to="/whatido">WhatIDo</router-link> -->
 
-    <router-view v-slot="{ Component }">
+    <!-- <router-view v-slot="{ Component, route }">
       <transition name="slide" mode="out-in">
         <component :is="Component" />
       </transition>
-    </router-view>
+    </router-view> -->
   </div>
 </template>
 
-<script></script>
+<script>
+import Header from "@/components/Header.vue";
+import Sidebar from "@/components/Sidebar.vue";
+
+export default {
+  components: {
+    Header,
+    Sidebar,
+  },
+};
+</script>
 
 <style>
-.content {
+/* .content {
   width: 100%;
   min-height: 100vh;
 }
 
 .page {
   position: absolute;
-  top: 30px;
+  top: 300px;
 }
 
 a {
@@ -65,5 +79,5 @@ a.router-link-active {
 .slide-leave-from {
   position: absolute;
   left: 0;
-}
+} */
 </style>
