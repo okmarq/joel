@@ -1,121 +1,150 @@
 <template>
-  <div
-    :class="{
-      '-translate-x-12': sideBarState.none,
-      '-translate-x-2': sideBarState.minimized,
-      'translate-x-32': sideBarState.maximized,
-    }"
-    class="
-      absolute
-      top-20
-      left-10
-      w-12
-      h-14
-      bg-secondary
-      sm:hidden
-      flex
-      items-center
-      justify-center
-      rounded-r-full
-      transition
-      duration-700
-      ease-in-out
-      transform
-    "
-  >
-    <button @click="showSidebar" class="z-10">
+  <div class="relative">
+    <button
+      @click="showSidebar"
+      :class="{
+        '-translate-x-3': sideBarState.none,
+        'translate-x-8': sideBarState.minimized,
+        'translate-x-44': sideBarState.maximized,
+      }"
+      class="
+        absolute
+        top-16
+        w-12
+        h-14
+        bg-secondary
+        sm:hidden
+        flex
+        items-center
+        justify-center
+        rounded-r-full
+        z-10
+        transition
+        transform
+        duration-700
+        ease-in-out
+      "
+    >
       <img
         class="animate-pulse"
         src="https://img.icons8.com/wired/28/000066/menu.png"
       />
     </button>
-  </div>
 
-  <div :class="{ hidden: !hamburger }" class="sm:flex">
-    <div class="sidebar absolute left-0 w-auto h-full pt-20 flex">
-      <!-- sidebar iconic -->
-      <div class="relative w-14 h-full bg-secondary pt-4 z-10">
-        <nav
-          class="flex flex-col items-center font-cursiveTwo text-xl space-y-8"
-        >
-          <button @click="sideBar" class="arrow mb-8">
-            <img v-if="isExpanded" :src="backArrow" />
-            <img v-else :src="frontArrow" />
-          </button>
-          <a class="" href="/index.php">
-            <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
-          </a>
-          <a class="" href="/whatido.php">
-            <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
-          </a>
-          <a class="" href="/experience.php">
-            <img
-              src="https://img.icons8.com/wired/28/000066/development-skill.png"
-            />
-          </a>
-          <a class="" href="/about.php">
-            <img
-              src="https://img.icons8.com/wired/28/000066/about-us-male.png"
-            />
-          </a>
-          <a class="" href="/portfolio.php">
-            <img src="https://img.icons8.com/wired/28/000066/resume.png" />
-          </a>
-          <a class="" href="/contact.php">
-            <img src="https://img.icons8.com/wired/28/000066/email.png" />
-          </a>
-        </nav>
-
-        <div
-          class="
-            bg-tertiary
-            h-12
-            absolute
-            bottom-0
-            w-full
-            flex
-            justify-center
-            items-center
-          "
-        >
-          <a class="" href="#">
-            <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
-          </a>
-        </div>
-      </div>
-
-      <!-- sidebar full -->
+    <div class="relative sm:flex">
       <div
         :class="{
-          'translate-x-0 ease-out': isExpanded,
-          '-translate-x-48 ease-in': !isExpanded,
+          '-translate-x-52': sideBarState.none,
+          'translate-x-0': sideBarState.minimized,
+          'translate-x-0': sideBarState.maximized,
         }"
         class="
-          bg-secondary
-          pt-4
-          relative
-          w-36
-          h-full
-          transform
+          absolute
+          left-0
+          h-screen
+          flex
           transition
-          duration-1000
+          transform
+          duration-700
+          ease-in-out
         "
       >
-        <nav class="flex flex-col font-cursiveTwo text-xl space-y-8">
-          <button class="back-arrow mb-8 invisible">collapse</button>
-          <router-link to="/">Home</router-link>
-          <router-link to="/whatido">What I Do</router-link>
-          <router-link to="/experience">Experience</router-link>
-          <router-link to="/about">About</router-link>
-          <router-link to="/contact">Contact</router-link>
-          <router-link to="/portfolio">Portfolio</router-link>
-        </nav>
+        <!-- sidebar iconic -->
+        <div
+          :class="{ 'translate-x-0': !isExpanded }"
+          class="
+            w-14
+            bg-secondary
+            flex flex-col
+            z-10
+            transition
+            transform
+            duration-700
+            ease-in-out
+          "
+        >
+          <nav
+            class="
+              w-full
+              h-full
+              flex flex-col
+              items-center
+              justify-center
+              space-y-8
+            "
+          >
+            <button @click="sideBar" class="mb-8 z-30">
+              <img v-if="isExpanded" :src="backArrow" />
+              <img v-else :src="frontArrow" />
+            </button>
+            <a class="" href="/index.php">
+              <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
+            </a>
+            <a class="" href="/whatido.php">
+              <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
+            </a>
+            <a class="" href="/experience.php">
+              <img
+                src="https://img.icons8.com/wired/28/000066/development-skill.png"
+              />
+            </a>
+            <a class="" href="/about.php">
+              <img
+                src="https://img.icons8.com/wired/28/000066/about-us-male.png"
+              />
+            </a>
+            <a class="" href="/portfolio.php">
+              <img src="https://img.icons8.com/wired/28/000066/resume.png" />
+            </a>
+            <a class="" href="/contact.php">
+              <img src="https://img.icons8.com/wired/28/000066/email.png" />
+            </a>
+          </nav>
 
-        <div class="bg-tertiary h-12 absolute bottom-0 w-full pl-2">
-          <p><small>&copy; 2021 Copyright</small></p>
-          <p class="font-cursiveTwo">
-            <small>Developer:</small> <b>Joel Julius</b>
-          </p>
+          <div class="w-full h-14 bg-tertiary flex items-center justify-center">
+            <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
+          </div>
+        </div>
+
+        <!-- sidebar full -->
+        <div
+          :class="{ '-translate-x-52': !isExpanded }"
+          class="
+            w-36
+            bg-secondary
+            flex flex-col
+            transition
+            transform
+            duration-700
+            ease-in-out
+          "
+        >
+          <nav
+            class="
+              w-full
+              h-full
+              flex flex-col
+              justify-center
+              space-y-8
+              font-cursiveTwo
+              text-xl
+            "
+          >
+            <span class="mb-8">collapse</span>
+            <router-link to="/">Home</router-link>
+            <router-link to="/whatido">What I Do</router-link>
+            <router-link to="/experience">Experience</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/contact">Contact</router-link>
+            <router-link to="/portfolio">Portfolio</router-link>
+          </nav>
+
+          <div class="w-full h-14 bg-tertiary flex items-center justify-center">
+            <p><small>&copy; 2021 Copyright</small></p>
+            <p class="font-cursiveTwo">
+              <small>Developer:</small> <b>Joel Julius</b>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +158,10 @@ export default {
     return {
       isExpanded: false,
       hamburger: false,
+      hamburgerState: {
+        shown: false,
+        hidden: true,
+      },
       sideBarState: {
         none: true,
         minimized: false,
