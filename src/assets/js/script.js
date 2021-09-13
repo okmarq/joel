@@ -1,25 +1,25 @@
-const sidebar = document.querySelector('.sidebar'),
-show = document.querySelector('.show'),
-front_arrow = document.querySelector('.front-arrow'),
-back_arrow = document.querySelector('.back-arrow')
-hamburger = document.querySelector('.hamburger');
+// const sidebar = document.querySelector(".sidebar"),
+//   show = document.querySelector(".show"),
+//   front_arrow = document.querySelector(".front-arrow"),
+//   back_arrow = document.querySelector(".back-arrow");
+// hamburger = document.querySelector(".hamburger");
 
-front_arrow.addEventListener('click', e => {
-	show.classList.toggle('hidden');
-	sidebar.classList.toggle('w-14')
-	sidebar.classList.toggle('w-48')
-});
+// front_arrow.addEventListener("click", (e) => {
+//   show.classList.toggle("hidden");
+//   sidebar.classList.toggle("w-14");
+//   sidebar.classList.toggle("w-48");
+// });
 
-back_arrow.addEventListener('click', e => {
-	show.classList.toggle('hidden');
-	sidebar.classList.toggle('w-48')
-	sidebar.classList.toggle('w-14')
-});
+// back_arrow.addEventListener("click", (e) => {
+//   show.classList.toggle("hidden");
+//   sidebar.classList.toggle("w-48");
+//   sidebar.classList.toggle("w-14");
+// });
 
-hamburger.addEventListener('click', e => {
-	sidebar.classList.toggle('hidden')
-	front_arrow.click();
-});
+// hamburger.addEventListener("click", (e) => {
+//   sidebar.classList.toggle("hidden");
+//   front_arrow.click();
+// });
 
 // class Todo {
 // 	constructor(task) {
