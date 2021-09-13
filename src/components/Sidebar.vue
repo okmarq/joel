@@ -1,15 +1,22 @@
 <template>
-  <div class="relative">
+  <div
+    :class="{
+      'translate-x-0': sideBarState.none,
+      'translate-x-0': sideBarState.minimized,
+      'translate-x-0': sideBarState.maximized,
+    }"
+    class="relative transition transform duration-700 ease-in-out"
+  >
     <button
       @click="showSidebar"
       :class="{
-        '-translate-x-3': sideBarState.none,
-        'translate-x-8': sideBarState.minimized,
+        '-translate-x-2': sideBarState.none,
+        'translate-x-10': sideBarState.minimized,
         'translate-x-44': sideBarState.maximized,
       }"
       class="
         absolute
-        top-16
+        top-20
         w-12
         h-14
         bg-secondary
@@ -57,6 +64,7 @@
             bg-secondary
             flex flex-col
             z-10
+            pt-20
             transition
             transform
             duration-700
@@ -113,6 +121,7 @@
             w-36
             bg-secondary
             flex flex-col
+            pt-20
             transition
             transform
             duration-700
@@ -158,10 +167,6 @@ export default {
     return {
       isExpanded: false,
       hamburger: false,
-      hamburgerState: {
-        shown: false,
-        hidden: true,
-      },
       sideBarState: {
         none: true,
         minimized: false,
