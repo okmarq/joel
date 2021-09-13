@@ -10,15 +10,16 @@
       items-center
       justify-between
       px-2
-      sm:px-10
-      md:px-20
+      sm:px-14
       z-20
       shadow-md
     "
   >
-    <a class="font-cursive text-xl sm:text-3xl md:text-5xl flex gap-2" href="#">
+    <a class="flex items-center gap-2" href="#">
       <img src="https://img.icons8.com/wired/50/ffffff/informatics.png" />
-      <span class="">Lari-Lara</span>
+      <span class="font-cursive text-2xl sm:text-3xl md:text-5xl"
+        >Lari-Lara</span
+      >
     </a>
 
     <div class="font-cursiveTwo block lg:hidden">
