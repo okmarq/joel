@@ -5,7 +5,7 @@
       'translate-x-0': sideBarState.minimized,
       'translate-x-0': sideBarState.maximized,
     }"
-    class="relative transition transform duration-700 ease-in-out"
+    class="relative transition transform duration-700 ease-in-out z-10"
   >
     <button
       @click="showSidebar"
