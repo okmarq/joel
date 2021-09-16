@@ -46,7 +46,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../components/About.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     component: () => import("../components/Contact.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {
@@ -64,7 +64,7 @@ const routes = [
     component: () => import("../components/Experience.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {
@@ -73,7 +73,7 @@ const routes = [
     component: () => import("../components/Portfolio.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {
@@ -82,7 +82,7 @@ const routes = [
     component: () => import("../components/WhatIDo.vue"),
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
 ];
