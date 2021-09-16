@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Animate.css CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Swiper CSS -->
+	  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app" class="text-white"></div>
+    <div id="app" class="text-white h-screen w-full overflow-hidden"></div>
     <!-- built files will be auto injected -->
+    <!-- Swiper JS -->
+	  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

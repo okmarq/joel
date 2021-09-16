@@ -1,7 +1,7 @@
 <template>
   <div class="w-full img-2">
     <div class="bg-pattern-2">
-      <main class="h-screen">
+      <main class="">
         <div
           class="
             absolute
@@ -16,11 +16,11 @@
         >
           <div
             class="
-              ter-col
+              bg-tertiary
               w-16
               md:w-20
               lg:w-24
-              font-subtitle
+              font-serif
               rounded
               ml-6
               md:ml-4
@@ -29,7 +29,7 @@
               lg:px-2
               pb-1
               lg:pb-2
-              shadow-md
+              shadow
             "
           >
             <p class="">
@@ -41,15 +41,15 @@
             >
           </div>
 
-          <div class="font-subtitle px-2 ml-4 md:ml-2 space-y-2">
+          <div class="font-serif px-2 ml-4 md:ml-2 space-y-2">
             <button
               class="
-                ter-col
+                bg-tertiary
                 w-16
                 md:w-20
                 lg:w-24
                 rounded
-                shadow-md
+                shadow
                 font-semibold
                 lg:text-lg
               "
@@ -58,14 +58,15 @@
             </button>
             <button
               class="
-                ter-col
+                bg-tertiary
                 w-16
                 md:w-20
                 lg:w-24
                 rounded
-                shadow-md
-                text-gray-500 text-sm
+                shadow
+                text-sm
                 lg:text-base
+                disabled:opacity-20
               "
             >
               Hobbies
@@ -80,7 +81,7 @@
           >
             <h2
               class="
-                font-title
+                font-serif
                 text-xl
                 sm:text-3xl
                 md:text-4xl
@@ -95,11 +96,11 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2 relative">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -130,11 +131,11 @@
                     >
                   </div>
                 </div>
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2 relative">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -164,11 +165,11 @@
                     >
                   </div>
                 </div>
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -184,11 +185,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -204,11 +205,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -224,11 +225,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide ter-col">
+                <div class="swiper-slide bg-tertiary">
                   <div class="p-2">
                     <h4
                       class="
-                        font-subtitle font-semibold
+                        font-serif font-semibold
                         text-xl
                         md:text-2xl
                         lg:text-3xl
@@ -254,7 +255,7 @@
             <div class="w-full">
               <h3
                 class="
-                  font-title
+                  font-serif
                   text-xl
                   sm:text-3xl
                   md:text-4xl
@@ -275,7 +276,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -327,7 +328,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -361,7 +362,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -404,7 +405,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -456,7 +457,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -508,7 +509,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -560,7 +561,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -603,7 +604,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -637,7 +638,7 @@
                     <div class="p-2">
                       <h4
                         class="
-                          font-subtitle font-semibold
+                          font-serif font-semibold
                           text-xl
                           md:text-2xl
                           lg:text-3xl
@@ -716,7 +717,7 @@
             <div class="w-full hidden">
               <h3
                 class="
-                  font-title
+                  font-serif
                   text-xl
                   sm:text-3xl
                   md:text-4xl
@@ -734,7 +735,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -749,7 +750,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -764,7 +765,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -779,7 +780,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -794,7 +795,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -809,7 +810,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        ter-col
+                        bg-tertiary
                         w-full
                         h-full
                         rounded
@@ -844,4 +845,30 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.img-2 {
+  background-image: url("../assets/images/eye.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-pattern-2 {
+  background-image: url("../assets/images/patterns/wave.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.swiper1 .swiper-slide {
+  height: 200px;
+}
+.parallax-bg-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+</style>

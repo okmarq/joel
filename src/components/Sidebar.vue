@@ -25,7 +25,7 @@
         items-center
         justify-center
         rounded-r-full
-        z-10
+        z-20
         transition
         transform
         duration-700
@@ -41,7 +41,7 @@
     <div class="relative sm:flex">
       <div
         :class="{
-          '-translate-x-52': sideBarState.none,
+          '-translate-x-52 sm:translate-x-0': sideBarState.none,
           'translate-x-0': sideBarState.minimized,
           'translate-x-0': sideBarState.maximized,
         }"
@@ -63,7 +63,7 @@
             w-14
             bg-secondary
             flex flex-col
-            z-10
+            z-20
             pt-20
             transition
             transform
@@ -78,35 +78,36 @@
               flex flex-col
               items-center
               justify-center
-              space-y-8
+              space-y-4
+              sm:space-y-8
             "
           >
-            <button @click="sideBar" class="mb-8 z-30">
+            <button @click="sideBar" class="mb-4 sm:mb-6 z-40">
               <img v-if="isExpanded" :src="backArrow" />
               <img v-else :src="frontArrow" />
             </button>
-            <a class="" href="/index.php">
+            <router-link to="/">
               <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
-            </a>
-            <a class="" href="/whatido.php">
+            </router-link>
+            <router-link to="/whatido">
               <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
-            </a>
-            <a class="" href="/experience.php">
+            </router-link>
+            <router-link to="/experience">
               <img
                 src="https://img.icons8.com/wired/28/000066/development-skill.png"
               />
-            </a>
-            <a class="" href="/about.php">
+            </router-link>
+            <router-link to="/about">
               <img
                 src="https://img.icons8.com/wired/28/000066/about-us-male.png"
               />
-            </a>
-            <a class="" href="/portfolio.php">
+            </router-link>
+            <router-link to="/portfolio">
               <img src="https://img.icons8.com/wired/28/000066/resume.png" />
-            </a>
-            <a class="" href="/contact.php">
+            </router-link>
+            <router-link to="/contact">
               <img src="https://img.icons8.com/wired/28/000066/email.png" />
-            </a>
+            </router-link>
           </nav>
 
           <div class="w-full h-14 bg-tertiary flex items-center justify-center">
@@ -122,6 +123,7 @@
             bg-secondary
             flex flex-col
             pt-20
+            z-10
             transition
             transform
             duration-700
@@ -134,25 +136,24 @@
               h-full
               flex flex-col
               justify-center
-              space-y-8
-              font-cursiveTwo
+              space-y-4
+              sm:space-y-8
+              font-serif
               text-xl
             "
           >
-            <span class="mb-8">collapse</span>
+            <span class="mb-4 sm:mb-6 invisible">collapse</span>
             <router-link to="/">Home</router-link>
             <router-link to="/whatido">What I Do</router-link>
             <router-link to="/experience">Experience</router-link>
             <router-link to="/about">About</router-link>
-            <router-link to="/contact">Contact</router-link>
             <router-link to="/portfolio">Portfolio</router-link>
+            <router-link to="/contact">Contact</router-link>
           </nav>
 
-          <div class="w-full h-14 bg-tertiary flex items-center justify-center">
+          <div class="w-full h-14 bg-tertiary font-serif">
             <p><small>&copy; 2021 Copyright</small></p>
-            <p class="font-cursiveTwo">
-              <small>Developer:</small> <b>Joel Julius</b>
-            </p>
+            <p class=""><small>Developer:</small><b> Joel Julius</b></p>
           </div>
         </div>
       </div>
