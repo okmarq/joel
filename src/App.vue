@@ -3,21 +3,15 @@
 
   <Sidebar />
 
-  <div class="content">
-    <!-- <router-link to="/home1">Home1</router-link> | -->
-    <!-- <router-link to="/about1">About1</router-link> -->
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/contact">Contact</router-link> |
-    <router-link to="/experience">Experience</router-link> |
-    <router-link to="/portfolio">Portfolio</router-link> |
-    <router-link to="/whatido">WhatIDo</router-link> -->
-
-    <!-- <router-view v-slot="{ Component, route }">
-      <transition name="slide" mode="out-in">
+  <div class="">
+    <router-view v-slot="{ Component, route }">
+      <transition
+        :enter-active-class="route.meta.enterClass"
+        :leave-active-class="route.meta.leaveClass"
+      >
         <component :is="Component" />
       </transition>
-    </router-view> -->
+    </router-view>
   </div>
 </template>
 
@@ -35,16 +29,9 @@ export default {
 
 <style>
 /* .content {
-  width: 100%;
-  min-height: 100vh;
-}
+} */
 
-.page {
-  position: absolute;
-  top: 300px;
-}
-
-a {
+/* a {
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
@@ -55,29 +42,13 @@ a:hover,
 a.router-link-active {
   border-bottom: 2px solid #3498db;
 }
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.75s ease-out;
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
-.slide-enter-to {
-  position: absolute;
-  right: 0;
-}
-
-.slide-enter-from {
-  position: absolute;
-  right: -100%;
-}
-
-.slide-leave-to {
-  position: absolute;
-  left: -100%;
-}
-
-.slide-leave-from {
-  position: absolute;
-  left: 0;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease-out;
 } */
 </style>

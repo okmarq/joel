@@ -2,7 +2,7 @@
   <transition>
     <div class="page">
       <div class="bg-blue-200">
-        <h1>Home</h1>
+        <h1>Home1</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nobis
           dolorem temporibus porro voluptatum possimus corporis minus quia
@@ -13,3 +13,12 @@
     </div>
   </transition>
 </template>
+
+<script>
+export default {
+  name: "Home1",
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped></style>

@@ -16,13 +16,11 @@
     "
   >
     <a class="flex items-center gap-2" href="#">
-      <img src="https://img.icons8.com/wired/50/ffffff/informatics.png" />
-      <span class="font-cursive text-2xl sm:text-3xl md:text-5xl"
-        >Lari-Lara</span
-      >
+      <!-- <img src="https://img.icons8.com/wired/50/ffffff/informatics.png" /> -->
+      <span class="font-serif text-2xl sm:text-3xl md:text-5xl">Lari-Lara</span>
     </a>
 
-    <div class="font-cursiveTwo block lg:hidden">
+    <div class="block lg:hidden">
       <a href="#">+234 (0) 810-725-0441</a> / <a href="#">okmarq@gmail.com</a>
     </div>
   </header>
