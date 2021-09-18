@@ -11,26 +11,49 @@
           lg:right-20
           mt-1
           md:mt-2
-          flex
-          divide-x-4
           text-xs
           sm:text-sm
           md:text-base
           lg:text-lg
+          font-serif
         "
       >
         <button
           @click="switchExpEdu"
           v-if="!expEduSwitch"
-          class="bg-secondary p-2 rounded-l-lg font-serif pri-text font-bold"
+          class="
+            bg-secondary
+            p-2
+            rounded-l-lg
+            flex
+            items-center
+            justify-between
+            gap-2
+            font-bold
+          "
         >
+          <img
+            src="https://img.icons8.com/wired/20/ffffff/development-skill.png"
+          />
           Experience
         </button>
         <button
           @click="switchExpEdu"
           v-else
-          class="bg-secondary p-2 rounded-r-lg font-serif"
+          class="
+            bg-secondary
+            p-2
+            rounded-r-lg
+            flex
+            items-center
+            justify-between
+            gap-2
+            font-bold
+          "
         >
+          <img
+            src="https://img.icons8.com/wired/20/ffffff/graduation-cap.png"
+          />
           Education
         </button>
       </div>
@@ -324,7 +347,8 @@
             p-2
             rounded-lg
             font-serif
-            text-sm
+            text-xs
+            sm:text-sm
             lg:text-lg
             flex
             items-center
@@ -333,7 +357,7 @@
           "
           href="#"
           ><img
-            src="https://img.icons8.com/wired/28/000066/download.png"
+            src="https://img.icons8.com/wired/20/000066/download.png"
           />Download Resume</a
         >
       </div>
