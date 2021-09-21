@@ -1,16 +1,16 @@
 <template>
   <div class="w-full img-4">
-    <div class="bg-pattern-6">
+    <div class="">
       <main class="h-screen">
         <div class="pt-24 px-2 sm:pl-32 sm:pr-20">
           <div class="flex">
             <div class="lg:w-2/5 space-y-20">
               <div class="">
-                <h2 class="font-title text-5xl hidden lg:block">Contact</h2>
+                <h2 class="font-serif text-5xl hidden lg:block">Contact</h2>
               </div>
 
               <div class="lg:relative">
-                <p class="font-subtitle text-2xl hidden lg:block">
+                <p class="font-serif text-2xl hidden lg:block">
                   Connect with me
                 </p>
                 <div
@@ -21,25 +21,49 @@
                     right-2
                     sm:right-4
                     lg:top-8 lg:left-0
+                    gap-2
                   "
                 >
-                  <span class="">Gh</span>
-                  <span class="">Ln</span>
-                  <span class="">In</span>
-                  <span class="">Fb</span>
-                  <span class="">Tw</span>
-                  <span class="">Wh</span>
+                  <!-- social icons -->
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/171515/github.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/0077b5/linkedin.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/4267B2/facebook.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/8a3ab9/instagram-new.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/00ACEE/twitter.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/4FCE5D/whatsapp.png"
+                  />
+                  <img
+                    class=""
+                    src="https://img.icons8.com/wired/24/BB001B/gmail.png"
+                  />
                 </div>
               </div>
 
               <div class="space-y-14 hidden lg:block">
                 <p>
-                  <span class="font-subtitle text-lg">Email:</span>
+                  <span class="font-serif text-lg">Email:</span>
                   <br />okmarq@gmail.com
                 </p>
                 <p>
-                  <span class="font-subtitle text-lg">Phone:</span> <br />+234
-                  (0) 810-725-0441
+                  <span class="font-serif text-lg">Phone:</span> <br />+234 (0)
+                  810-725-0441
                 </p>
               </div>
             </div>
@@ -47,21 +71,17 @@
             <div class="w-full space-y-4 sm:space-y-14 block">
               <div class="">
                 <h3
-                  class="
-                    font-subtitle
-                    text-2xl
-                    md:text-4xl
-                    font-semibold
-                    italic
-                  "
+                  class="font-serif text-2xl md:text-3xl font-semibold italic"
                 >
                   Want to know more about me, build something awesome or
                   collaborate?
                 </h3>
               </div>
               <div class="">
-                <p class="sec-text font-subtitle text-2xl">Send me a message</p>
-                <form class="flex flex-col gap-4 sm:gap-0" action="">
+                <p class="text-secondary font-serif text-2xl">
+                  Send me a message
+                </p>
+                <form class="flex flex-col gap-4 sm:gap-0 pr-4" action="">
                   <div class="flex flex-col sm:flex-row gap-4">
                     <input
                       class="
@@ -117,11 +137,10 @@
                   <div class="">
                     <button
                       class="
-                        text-col-2
                         p-3
                         rounded-b-lg
-                        sec-col
-                        font-subtitle
+                        bg-secondary
+                        font-serif
                         text-lg
                         w-full
                       "
@@ -146,4 +165,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.img-4 {
+  background-image: url("../assets/images/patterns/world.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
