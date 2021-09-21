@@ -2,7 +2,7 @@
   <div class="w-full img-4">
     <div class="">
       <main class="h-screen">
-        <div class="pt-24 px-2 sm:pl-32 sm:pr-20">
+        <div class="pt-24 px-2 sm:pl-20 sm:pr-8">
           <div class="flex">
             <div class="lg:w-2/5 space-y-20">
               <div class="">
@@ -25,38 +25,36 @@
                   "
                 >
                   <!-- social icons -->
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/171515/github.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/0077b5/linkedin.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/4267B2/facebook.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/8a3ab9/instagram-new.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/00ACEE/twitter.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/4FCE5D/whatsapp.png"
-                  />
-                  <img
-                    class=""
-                    src="https://img.icons8.com/wired/24/BB001B/gmail.png"
-                  />
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/6e5494/github.png">
+                  </a>
+
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/0077b5/linkedin.png">
+                  </a>
+
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/4267B2/facebook.png">
+                  </a>
+
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/8a3ab9/instagram-new.png">
+                  </a>
+
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/00ACEE/twitter.png">
+                  </a>
+
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/4FCE5D/whatsapp.png">
+                  </a>
+                  <a href="#">
+                    <img src="https://img.icons8.com/wired/24/BB001B/gmail.png">
+                  </a>
                 </div>
               </div>
 
-              <div class="space-y-14 hidden lg:block">
+              <div class="space-y-12 hidden lg:block">
                 <p>
                   <span class="font-serif text-lg">Email:</span>
                   <br />okmarq@gmail.com
@@ -81,8 +79,10 @@
                 <p class="text-secondary font-serif text-2xl">
                   Send me a message
                 </p>
-                <form class="flex flex-col gap-4 sm:gap-0 pr-4" action="">
-                  <div class="flex flex-col sm:flex-row gap-4">
+                <form class="flex flex-col gap-1 sm:gap-0 pr-8" action="">
+                  <div
+                    class="flex flex-col sm:flex-row gap-1 sm:gap-1 lg:gap-1"
+                  >
                     <input
                       class="
                         flex-1
