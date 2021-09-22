@@ -1,4 +1,6 @@
-export const preset = "@vue/cli-plugin-unit-jest";
-export const transform = {
-  "^.+\\.vue$": "vue-jest",
+module.exports = {
+  preset: "@vue/cli-plugin-unit-jest",
+  transform: {
+    "^.+\\.vue$": "vue-jest",
+  },
 };
