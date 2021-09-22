@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "test:unit": "nyc vue-cli-service test:unit",
+    "coverage": "nyc npm run test:unit",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -13,7 +16,9 @@
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
+    "coveralls": "^3.1.1",
     "jsconfig.json": "^2.2.0",
+    "nyc": "^15.1.0",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
