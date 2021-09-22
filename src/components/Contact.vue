@@ -26,30 +26,44 @@
                 >
                   <!-- social icons -->
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/6e5494/github.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/6e5494/github.png"
+                    />
                   </a>
 
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/0077b5/linkedin.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/0077b5/linkedin.png"
+                    />
                   </a>
 
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/4267B2/facebook.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/4267B2/facebook.png"
+                    />
                   </a>
 
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/8a3ab9/instagram-new.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/8a3ab9/instagram-new.png"
+                    />
                   </a>
 
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/00ACEE/twitter.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/00ACEE/twitter.png"
+                    />
                   </a>
 
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/4FCE5D/whatsapp.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/4FCE5D/whatsapp.png"
+                    />
                   </a>
                   <a href="#">
-                    <img src="https://img.icons8.com/wired/24/BB001B/gmail.png">
+                    <img
+                      src="https://img.icons8.com/wired/24/BB001B/gmail.png"
+                    />
                   </a>
                 </div>
               </div>
