@@ -5,33 +5,41 @@ orbs:
   heroku: circleci/heroku@1.2.6
   coveralls: coveralls/coveralls@1.0.6
 
-# jobs:
-#   build:
-#     docker:
-#       - image: cimg/node:16.8.0
-#     steps:
-#       - checkout
-#       - restore_cache:
-#         key: dependency-cache-{{ checksum "package.json" }}
-#       - run: 
-#         name: install-npm-dependencies
-#         command: npm install
-#       - save_cache:
-#         key: dependency-cache-{{ checksum "package.json" }}
-#         paths:
-#           - ./node_modules
-#       - run: # run tests
-#         name: test
-#         command: npm run test:unit
-#       - run: # run code coverage report
-#         name: code-coverage
-#         command: npm run coveralls
-#       - run: # run build
-#         name: Build
-#         command: npm run build
-#       # - coveralls/upload
+jobs:
+  build:
+    docker:
+      - image: cimg/node:16.8.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run: 
+          name: install-npm-dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run: # run tests
+          name: test
+          command: npm run test:unit
+      - run: # run code coverage report
+          name: code-coverage
+          command: npm run coveralls
+      - run: # run build
+          name: Build
+          command: npm run build
+      # - coveralls/upload
 
 workflows:
   heroku_deploy:
     jobs:
-      - heroku/deploy-via-git
+      - build
+      - heroku/deploy-via-git:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
+
+# circleci config validate
