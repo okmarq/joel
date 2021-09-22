@@ -8,20 +8,20 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-      -build
+      - build
       - heroku/deploy-via-git
         requires:
-          -build
+          - build
         filters:
           branches:
             only: main
 jobs:
   build:
     docker:
-      -image: cimg/node:16.8.0
+      - image: cimg/node:16.8.0
     steps:
       - checkout
-      -restore_cache:
+      - restore_cache:
         key: dependency-cache-{{ checksum "package.json" }}
       - run: 
         name: install-npm-dependencies
