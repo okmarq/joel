@@ -5,11 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "jest",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "coverage": "nyc npm run test:unit",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
