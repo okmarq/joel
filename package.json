@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "coverage": "nyc npm run test:unit",
-    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc npm test:unit && nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
@@ -22,6 +22,7 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
+    "vue-owl-carousel": "^2.0.3",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
