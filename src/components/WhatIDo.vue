@@ -91,6 +91,17 @@
             >
               Full stack Developer & Instructor
             </h2>
+
+            <!-- Set up your HTML -->
+            <carousel>
+              <div>Your Content</div>
+              <div>Your Content</div>
+              <div>Your Content</div>
+              <div>Your Content</div>
+              <div>Your Content</div>
+              <div>Your Content</div>
+              <div>Your Content</div>
+            </carousel>
             <!-- Slider main container -->
             <div class="swiper-container swiper1 px-8">
               <!-- Additional required wrapper -->
@@ -841,6 +852,9 @@
 <script>
 export default {
   name: "WhatIDo",
+  data: function () {
+    return {};
+  },
 };
 </script>
 
