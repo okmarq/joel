@@ -30,6 +30,8 @@ jobs:
           name: code-coverage
           command: npm run coverage
       - coveralls/upload
+          verbose: true
+          path_to_lcov: ./coverage/lcov.info
       - store_artifacts: # special step to save test results as as artifact
           # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: test-results
