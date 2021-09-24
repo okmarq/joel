@@ -9,7 +9,7 @@ jobs:
   build:
     docker:
       - image: cimg/node:16.8.0
-    working_directory: ~/joel
+    working_directory: /tmp
     steps:
       - checkout
       - restore_cache:
@@ -27,9 +27,17 @@ jobs:
       - run: # run code coverage report
           name: code-coverage
           command: npm run coverage
-      - store_artifacts: # special step to save test results as as artifact
-          # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+      - run:
+          name: Creating Dummy Artifacts
+          command: |
+            echo "my artifact file" > /tmp/art-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/art-2;
+      - store_artifacts:
           path: /tmp/art-1
+          destination: artifact-file
+      - store_artifacts:
+          path: /tmp/artifacts
           prefix: coverage
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results
