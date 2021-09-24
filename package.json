@@ -8,7 +8,9 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "coverage": "nyc npm run test:unit",
-    "coveralls": "nyc npm test:unit && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc npm test:unit && nyc report --reporter=text-lcov | coveralls",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
@@ -17,9 +19,11 @@
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
     "coveralls": "^3.1.1",
+    "express": "^4.17.1",
     "jsconfig.json": "^2.2.0",
     "nyc": "^15.1.0",
     "postcss": "^7",
+    "serve-static": "^1.14.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
     "vue-owl-carousel": "^2.0.3",
