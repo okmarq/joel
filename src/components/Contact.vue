@@ -90,7 +90,7 @@
                 </h3>
               </div>
               <div class="">
-                <p class="text-secondary font-serif text-2xl">
+                <p class="text-secondary-main font-serif text-2xl">
                   Send me a message
                 </p>
                 <form class="flex flex-col gap-1 sm:gap-0 pr-8" action="">
@@ -153,7 +153,7 @@
                       class="
                         p-3
                         rounded-b-lg
-                        bg-secondary
+                        bg-secondary-main
                         font-serif
                         text-lg
                         w-full

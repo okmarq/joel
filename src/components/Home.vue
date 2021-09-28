@@ -2,7 +2,7 @@
   <div class="w-full img-1">
     <div class="bg-pattern-1">
       <main class="pt-24 sm:pt-24 px-6 sm:px-20">
-        <div class="text-primary w-4/6">
+        <div class="text-primary-main w-4/6">
           <div class="text-center">
             <p class="text-lg font-medium">Hi there, I'm</p>
             <p class="text-7xl sm:text-8xl">Joel</p>
@@ -12,7 +12,7 @@
                 sm:text-3xl
                 lg:text-5xl
                 mb-4
-                text-tertiary
+                text-tertiary-main
                 font-serif
               "
             >
@@ -38,7 +38,7 @@
           <div
             class="
               p-2
-              bg-secondary
+              bg-secondary-main
               rounded
               shadow-md
               leading-tight
@@ -55,7 +55,7 @@
           <div
             class="
               p-2
-              bg-secondary
+              bg-secondary-main
               rounded
               shadow-md
               leading-tight
@@ -78,7 +78,7 @@
             md:ml-6
             text-sm
             sm:text-xl
-            text-primary
+            text-primary-main
             font-bold font-serif
             flex
             items-center

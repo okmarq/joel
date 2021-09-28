@@ -1,5 +1,5 @@
 <template>
-  <!-- <Header /> -->
+  <Header />
 
   <Sidebar />
 
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-// import Header from "@/components/Header.vue";
+import Header from "@/components/Header.vue";
 import Sidebar from "@/components/Sidebar.vue";
 
 export default {
   components: {
-    // Header,
+    Header,
     Sidebar,
   },
 };

@@ -1,7 +1,15 @@
 <template>
   <main class="w-full pt-20 px-2 sm:pl-32 sm:pr-20">
     <div class="flex mt-6">
-      <div class="w-5/12 border-4 border-tertiary rounded-l-lg hidden lg:block">
+      <div
+        class="
+          w-5/12
+          border-4 border-tertiary-main
+          rounded-l-lg
+          hidden
+          lg:block
+        "
+      >
         <img
           class="block max-w-full h-auto mx-auto rounded-l"
           src="../assets/images/tilt-head.jpg"
@@ -11,7 +19,7 @@
         class="
           bg-pattern-4
           w-full
-          bg-primary
+          bg-primary-main
           rounded-l-lg
           lg:rounded-l-none
           rounded-r-lg
@@ -27,7 +35,7 @@
         <h2
           class="
             font-serif
-            text-secondary text-lg
+            text-secondary-main text-lg
             sm:text-2xl
             md:text-4xl
             leading-none
@@ -46,7 +54,7 @@
             mr-2
             rounded-l
             float-left
-            border-tertiary
+            border-tertiary-main
           "
           src="../assets/images/tilt-head.jpg"
         />
