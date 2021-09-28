@@ -16,7 +16,7 @@
         >
           <div
             class="
-              bg-tertiary
+              bg-tertiary-main
               w-16
               md:w-20
               lg:w-24
@@ -44,7 +44,7 @@
           <div class="font-serif px-2 ml-4 md:ml-2 space-y-2">
             <button
               class="
-                bg-tertiary
+                bg-tertiary-main
                 w-16
                 md:w-20
                 lg:w-24
@@ -58,7 +58,7 @@
             </button>
             <button
               class="
-                bg-tertiary
+                bg-tertiary-main
                 w-16
                 md:w-20
                 lg:w-24
@@ -107,7 +107,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2 relative">
                     <h4
                       class="
@@ -142,7 +142,7 @@
                     >
                   </div>
                 </div>
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2 relative">
                     <h4
                       class="
@@ -176,7 +176,7 @@
                     >
                   </div>
                 </div>
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2">
                     <h4
                       class="
@@ -196,7 +196,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2">
                     <h4
                       class="
@@ -216,7 +216,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2">
                     <h4
                       class="
@@ -236,7 +236,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide bg-tertiary">
+                <div class="swiper-slide bg-tertiary-main">
                   <div class="p-2">
                     <h4
                       class="
@@ -746,7 +746,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded
@@ -761,7 +761,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded
@@ -776,7 +776,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded
@@ -791,7 +791,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded
@@ -806,7 +806,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded
@@ -821,7 +821,7 @@
                   <div class="swiper-slide">
                     <div
                       class="
-                        bg-tertiary
+                        bg-tertiary-main
                         w-full
                         h-full
                         rounded

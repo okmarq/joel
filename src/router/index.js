@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../components/Home.vue";
-import Home1 from "../components/Home1.vue";
-import About1 from "../components/About1.vue";
 // import About from "../components/About.vue";
 // import Contact from "../components/Contact.vue";
 // import Experience from "../components/Experience.vue";
@@ -16,24 +14,6 @@ const routes = [
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
       leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
-  {
-    path: "/home1",
-    name: "Home1",
-    component: Home1,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
-  {
-    path: "/about1",
-    name: "About1",
-    component: About1,
-    meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
   {

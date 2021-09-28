@@ -13,7 +13,7 @@
         top-20
         w-12
         h-14
-        bg-secondary
+        bg-secondary-main
         sm:hidden
         flex
         items-center
@@ -46,7 +46,7 @@
         z-20
         top-0
         left-0
-        bg-tertiary
+        bg-tertiary-main
         flex flex-col
         justify-between
         pt-24
@@ -56,7 +56,7 @@
     >
       <nav
         :class="{ 'px-4 items-start': isExpanded, 'items-center': !isExpanded }"
-        class="flex flex-col space-y-8"
+        class="flex flex-col space-y-8 font-serif text-lg"
       >
         <button @click="toggleSidebarSize" class="mb-6">
           <img v-if="!isExpanded" :src="frontArrow" />
@@ -109,10 +109,10 @@
           'pl-4 items-center': isExpanded,
           'items-center justify-center': !isExpanded,
         }"
-        class="h-14 bg-secondary flex gap-4"
+        class="h-14 bg-secondary-main flex gap-4"
       >
         <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
-        <div :class="{ hidden: !isExpanded }" class="">
+        <div :class="{ hidden: !isExpanded }" class="font-serif">
           <p><small>&copy; 2021 Copyright</small></p>
           <p>
             <small>Developer:<b> Joel Julius</b></small>

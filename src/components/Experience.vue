@@ -22,7 +22,7 @@
           @click="switchExpEdu"
           v-if="!expEduSwitch"
           class="
-            bg-secondary
+            bg-secondary-main
             p-2
             rounded-l-lg
             flex
@@ -41,7 +41,7 @@
           @click="switchExpEdu"
           v-else
           class="
-            bg-secondary
+            bg-secondary-main
             p-2
             rounded-r-lg
             flex
@@ -343,7 +343,7 @@
       <div class="absolute bottom-4">
         <a
           class="
-            bg-secondary
+            bg-secondary-main
             p-2
             rounded-lg
             font-serif
