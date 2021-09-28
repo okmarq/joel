@@ -63,14 +63,14 @@
           <img v-else :src="backArrow" />
         </button>
         <router-link :class="{ 'flex gap-4 items-center': isExpanded }" to="/">
-          <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
+          <img src="https://img.icons8.com/wired/28/ffffff/home-page.png" />
           <span :class="{ hidden: !isExpanded }" class="">Home</span>
         </router-link>
         <router-link
           :class="{ 'flex gap-4 items-center': isExpanded }"
           to="/whatido"
         >
-          <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
+          <img src="https://img.icons8.com/wired/28/ffffff/wrench.png" />
           <span :class="{ hidden: !isExpanded }" class="">What I Do</span>
         </router-link>
         <router-link
@@ -78,7 +78,7 @@
           to="/experience"
         >
           <img
-            src="https://img.icons8.com/wired/28/000066/development-skill.png"
+            src="https://img.icons8.com/wired/28/ffffff/development-skill.png"
           />
           <span :class="{ hidden: !isExpanded }" class="">Experience</span>
         </router-link>
@@ -86,21 +86,21 @@
           :class="{ 'flex gap-4 items-center': isExpanded }"
           to="/about"
         >
-          <img src="https://img.icons8.com/wired/28/000066/about-us-male.png" />
+          <img src="https://img.icons8.com/wired/28/ffffff/about-us-male.png" />
           <span :class="{ hidden: !isExpanded }" class="">About</span>
         </router-link>
         <router-link
           :class="{ 'flex gap-4 items-center': isExpanded }"
           to="/portfolio"
         >
-          <img src="https://img.icons8.com/wired/28/000066/resume.png" />
+          <img src="https://img.icons8.com/wired/28/ffffff/resume.png" />
           <span :class="{ hidden: !isExpanded }" class="">Portfolio</span>
         </router-link>
         <router-link
           :class="{ 'flex gap-4 items-center': isExpanded }"
           to="/contact"
         >
-          <img src="https://img.icons8.com/wired/28/000066/email.png" />
+          <img src="https://img.icons8.com/wired/28/ffffff/email.png" />
           <span :class="{ hidden: !isExpanded }" class="">Contact</span>
         </router-link>
       </nav>
@@ -111,7 +111,7 @@
         }"
         class="h-14 bg-secondary-main flex gap-4"
       >
-        <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
+        <img src="https://img.icons8.com/wired/24/ffffff/copyright.png" />
         <div :class="{ hidden: !isExpanded }" class="font-serif">
           <p><small>&copy; 2021 Copyright</small></p>
           <p>
@@ -135,8 +135,8 @@ export default {
         isMinimized: false,
         isMaximized: false,
       },
-      frontArrow: "https://img.icons8.com/wired/28/000066/forward--v2.png",
-      backArrow: "https://img.icons8.com/wired/28/000066/back.png",
+      frontArrow: "https://img.icons8.com/wired/28/ffffff/forward--v2.png",
+      backArrow: "https://img.icons8.com/wired/28/ffffff/back.png",
     };
   },
   methods: {
