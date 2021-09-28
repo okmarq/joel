@@ -1,18 +1,12 @@
 <template>
-  <div
-    :class="{
-      'translate-x-0': sideBarState.none,
-      'translate-x-0': sideBarState.minimized,
-      'translate-x-0': sideBarState.maximized,
-    }"
-    class="relative transition transform duration-700 ease-in-out z-10"
-  >
+  <div class="">
+    <!-- Hamburger -->
     <button
-      @click="showSidebar"
+      @click="toggleSidebarVisibility"
       :class="{
-        '-translate-x-2': sideBarState.none,
-        'translate-x-10': sideBarState.minimized,
-        'translate-x-44': sideBarState.maximized,
+        'left-52': sidebarState.isMaximized,
+        'left-14': sidebarState.isMinimized,
+        'left-0': sidebarState.isNone,
       }"
       class="
         absolute
@@ -25,11 +19,12 @@
         items-center
         justify-center
         rounded-r-full
-        z-20
+        z-10
         transition
         transform
-        duration-700
+        duration-500
         ease-in-out
+        -translate-x-2
       "
     >
       <img
@@ -38,123 +33,90 @@
       />
     </button>
 
-    <div class="relative sm:flex">
+    <!-- Sidebar -->
+    <div
+      :class="{
+        'w-14': !isExpanded,
+        'w-52': isExpanded,
+        'hidden sm:flex': !isVisible,
+      }"
+      class="
+        h-screen
+        fixed
+        z-20
+        top-0
+        left-0
+        bg-tertiary
+        flex flex-col
+        justify-between
+        pt-24
+        transition
+        duration-500
+      "
+    >
+      <nav
+        :class="{ 'px-4 items-start': isExpanded, 'items-center': !isExpanded }"
+        class="flex flex-col space-y-8"
+      >
+        <button @click="toggleSidebarSize" class="mb-6">
+          <img v-if="!isExpanded" :src="frontArrow" />
+          <img v-else :src="backArrow" />
+        </button>
+        <router-link :class="{ 'flex gap-4 items-center': isExpanded }" to="/">
+          <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
+          <span :class="{ hidden: !isExpanded }" class="">Home</span>
+        </router-link>
+        <router-link
+          :class="{ 'flex gap-4 items-center': isExpanded }"
+          to="/whatido"
+        >
+          <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
+          <span :class="{ hidden: !isExpanded }" class="">What I Do</span>
+        </router-link>
+        <router-link
+          :class="{ 'flex gap-4 items-center': isExpanded }"
+          to="/experience"
+        >
+          <img
+            src="https://img.icons8.com/wired/28/000066/development-skill.png"
+          />
+          <span :class="{ hidden: !isExpanded }" class="">Experience</span>
+        </router-link>
+        <router-link
+          :class="{ 'flex gap-4 items-center': isExpanded }"
+          to="/about"
+        >
+          <img src="https://img.icons8.com/wired/28/000066/about-us-male.png" />
+          <span :class="{ hidden: !isExpanded }" class="">About</span>
+        </router-link>
+        <router-link
+          :class="{ 'flex gap-4 items-center': isExpanded }"
+          to="/portfolio"
+        >
+          <img src="https://img.icons8.com/wired/28/000066/resume.png" />
+          <span :class="{ hidden: !isExpanded }" class="">Portfolio</span>
+        </router-link>
+        <router-link
+          :class="{ 'flex gap-4 items-center': isExpanded }"
+          to="/contact"
+        >
+          <img src="https://img.icons8.com/wired/28/000066/email.png" />
+          <span :class="{ hidden: !isExpanded }" class="">Contact</span>
+        </router-link>
+      </nav>
       <div
         :class="{
-          '-translate-x-52 sm:translate-x-0': sideBarState.none,
-          'translate-x-0': sideBarState.minimized,
-          'translate-x-0': sideBarState.maximized,
+          'pl-4 items-center': isExpanded,
+          'items-center justify-center': !isExpanded,
         }"
-        class="
-          absolute
-          left-0
-          h-screen
-          flex
-          transition
-          transform
-          duration-700
-          ease-in-out
-        "
+        class="h-14 bg-secondary flex gap-4"
       >
-        <!-- sidebar iconic -->
-        <div
-          :class="{ 'translate-x-0': !isExpanded }"
-          class="
-            w-14
-            bg-secondary
-            flex flex-col
-            z-20
-            pt-20
-            transition
-            transform
-            duration-700
-            ease-in-out
-          "
-        >
-          <nav
-            class="
-              w-full
-              h-full
-              flex flex-col
-              items-center
-              justify-center
-              space-y-4
-              sm:space-y-8
-            "
-          >
-            <button @click="sideBar" class="mb-4 sm:mb-6 z-40">
-              <img v-if="isExpanded" :src="backArrow" />
-              <img v-else :src="frontArrow" />
-            </button>
-            <router-link to="/">
-              <img src="https://img.icons8.com/wired/28/000066/home-page.png" />
-            </router-link>
-            <router-link to="/whatido">
-              <img src="https://img.icons8.com/wired/28/000066/wrench.png" />
-            </router-link>
-            <router-link to="/experience">
-              <img
-                src="https://img.icons8.com/wired/28/000066/development-skill.png"
-              />
-            </router-link>
-            <router-link to="/about">
-              <img
-                src="https://img.icons8.com/wired/28/000066/about-us-male.png"
-              />
-            </router-link>
-            <router-link to="/portfolio">
-              <img src="https://img.icons8.com/wired/28/000066/resume.png" />
-            </router-link>
-            <router-link to="/contact">
-              <img src="https://img.icons8.com/wired/28/000066/email.png" />
-            </router-link>
-          </nav>
-
-          <div class="w-full h-14 bg-tertiary flex items-center justify-center">
-            <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
-          </div>
-        </div>
-
-        <!-- sidebar full -->
-        <div
-          :class="{ '-translate-x-52': !isExpanded }"
-          class="
-            w-36
-            bg-secondary
-            flex flex-col
-            pt-20
-            z-10
-            transition
-            transform
-            duration-700
-            ease-in-out
-          "
-        >
-          <nav
-            class="
-              w-full
-              h-full
-              flex flex-col
-              justify-center
-              space-y-4
-              sm:space-y-8
-              font-serif
-              text-xl
-            "
-          >
-            <span class="mb-4 sm:mb-6 invisible">collapse</span>
-            <router-link to="/">Home</router-link>
-            <router-link to="/whatido">What I Do</router-link>
-            <router-link to="/experience">Experience</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/portfolio">Portfolio</router-link>
-            <router-link to="/contact">Contact</router-link>
-          </nav>
-
-          <div class="w-full h-14 bg-tertiary font-serif">
-            <p><small>&copy; 2021 Copyright</small></p>
-            <p class=""><small>Developer:</small><b> Joel Julius</b></p>
-          </div>
+        <img src="https://img.icons8.com/wired/24/000066/copyright.png" />
+        <div :class="{ hidden: !isExpanded }" class="">
+          <p><small>&copy; 2021 Copyright</small></p>
+          <p>
+            <small>Developer:<b> Joel Julius</b></small>
+          </p>
         </div>
       </div>
     </div>
@@ -167,54 +129,38 @@ export default {
   data: function () {
     return {
       isExpanded: false,
-      hamburger: false,
-      sideBarState: {
-        none: true,
-        minimized: false,
-        maximized: false,
+      isVisible: false,
+      sidebarState: {
+        isNone: true,
+        isMinimized: false,
+        isMaximized: false,
       },
-      arrow: "https://img.icons8.com/wired/28/000066/forward--v2.png",
       frontArrow: "https://img.icons8.com/wired/28/000066/forward--v2.png",
       backArrow: "https://img.icons8.com/wired/28/000066/back.png",
-      variants: [
-        {
-          frontArrow: "https://img.icons8.com/wired/28/000066/forward--v2.png",
-        },
-        {
-          backArrow: "https://img.icons8.com/wired/28/000066/back.png",
-        },
-      ],
     };
   },
   methods: {
-    sideBar() {
+    toggleSidebarSize() {
       this.isExpanded = !this.isExpanded;
-      this.hamburgerSideBarState();
+      this.setSidebarState();
     },
-    showSidebar() {
-      this.hamburger = !this.hamburger;
-      this.hamburgerSideBarState();
+    toggleSidebarVisibility() {
+      this.isVisible = !this.isVisible;
+      this.setSidebarState();
     },
-    hamburgerSideBarState() {
-      if (this.hamburger && this.isExpanded) {
-        this.sideBarState.none = false;
-        this.sideBarState.minimized = false;
-        this.sideBarState.maximized = true;
-      }
-      if (this.hamburger && !this.isExpanded) {
-        this.sideBarState.none = false;
-        this.sideBarState.minimized = true;
-        this.sideBarState.maximized = false;
-      }
-      if (!this.hamburger && this.isExpanded) {
-        this.sideBarState.none = true;
-        this.sideBarState.minimized = false;
-        this.sideBarState.maximized = false;
-      }
-      if (!this.hamburger && !this.isExpanded) {
-        this.sideBarState.none = true;
-        this.sideBarState.minimized = false;
-        this.sideBarState.maximized = false;
+    setSidebarState() {
+      if (!this.isVisible) {
+        this.sidebarState.isNone = true;
+        this.sidebarState.isMinimized = false;
+        this.sidebarState.isMaximized = false;
+      } else if (this.isVisible && !this.isExpanded) {
+        this.sidebarState.isNone = false;
+        this.sidebarState.isMinimized = true;
+        this.sidebarState.isMaximized = false;
+      } else if (this.isVisible && this.isExpanded) {
+        this.sidebarState.isNone = false;
+        this.sidebarState.isMinimized = false;
+        this.sidebarState.isMaximized = true;
       }
     },
   },
