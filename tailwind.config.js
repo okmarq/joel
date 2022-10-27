@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'heebo': ['Heebo', 'sans-serif']
+    },
     extend: {
       colors: {
         primary: 'var(--color-primary)',
@@ -12,9 +15,6 @@ module.exports = {
         dark: 'var(--color-dark)',
         light: 'var(--color-light)'
       }
-    },
-    fontFamily: {
-      'heebo': ['Heebo', 'sans-serif']
     }
   },
   plugins: [],

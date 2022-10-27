@@ -22,7 +22,7 @@ function App() {
 
       <header className='mb-2 sm:mb-20'>
         <div className='hidden sm:block'>
-          <nav className='w-screen h-16 px-16 flex justify-end gap-6 items-center'>
+          <nav className='w-full h-16 px-16 flex justify-end gap-6 items-center'>
             <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Works</a>
             <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Blog</a>
             <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Contact</a>
@@ -62,7 +62,7 @@ function App() {
           </div>
         </section>
 
-        <section className='bg-light'>
+        <section className='bg-green-100'>
           <div className='py-6 px-2 sm:px-8 md:px-16 lg:px-32'>
             <div className='pb-3 flex justify-between items-center'>
               <div>
