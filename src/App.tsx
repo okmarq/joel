@@ -63,7 +63,7 @@ function App() {
         </section>
 
         <section className='bg-green-100'>
-          <div className='py-6 px-2 sm:px-8 md:px-16 lg:px-32'>
+          <div className='py-6 px-4 sm:px-8 md:px-16 lg:px-32'>
             <div className='pb-3 flex justify-between items-center'>
               <div>
                 <h2 className='text-xl'>Recent posts</h2>
@@ -74,7 +74,7 @@ function App() {
               </div>
             </div>
 
-            <div className='flex justify-between items-center gap-4'>
+            <div className='flex flex-col sm:flex-row justify-between items-center gap-4'>
               <div className='bg-white rounded-sm py-4 pl-3 pr-5'>
                 <div className='flex flex-col gap-3'>
                   <h3 className='font-bold text-2xl'>Making a design system from scratch</h3>
