@@ -1,25 +1,12 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import './app.css';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import './app.css'
 import Joel from './images/joel.jpg'
-// import Blog from './pages/blog';
-// import Work from './pages/word';
-// import Contact from './pages/contact';
 
 function App() {
-  const navigation = [
-    { name: 'Blog', href: '#', current: true },
-    { name: 'Work', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
-  ]
-
   return (
     <div className='antialiased font-heebo text-dark'>
-      {/* <header className='text-3xl font-bold underline'>The navigattion component goes here</header>
-      <main className='text-blue-400'>The blog and works go here</main>
-      <footer className='text-sm'>The footer goin here</footer> */}
-
       <header className='mb-2 sm:mb-20'>
         <div className='hidden sm:block'>
           <nav className='w-full h-16 px-16 flex justify-end gap-6 items-center'>
