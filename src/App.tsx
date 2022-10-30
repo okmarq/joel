@@ -1,8 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import './app.css'
 import Joel from './images/joel.jpg'
+import Alumni from './images/alumni.png'
 
 function App() {
   return (
@@ -18,18 +19,18 @@ function App() {
 
         <nav className='sm:hidden w-full h-16 px-4 flex justify-end items-center'>
           <button className='font-medium hover:text-secondary active:text-primary'>
-            <FontAwesomeIcon icon={faBars} className='w-8 h-8' />
+            <FontAwesomeIcon icon={icon({name: 'bars', style: 'solid'})} className='w-8 h-8' />
           </button>
         </nav>
       </header>
 
-      <main>
+      <main className='mb-10'>
         <section className='pb-12 sm:pb-20 px-2 sm:px-8 md:px-16 lg:px-32'>
           <div className='flex items-center justify-between flex-col sm:flex-row sm:items-start gap-10 sm:gap-16 md:gap-20 lg:gap-24'>
             <div className='flex-1 order-2 sm:order-1 text-center sm:text-left'>
               <div className='flex flex-col gap-8 justify-between'>
                 <div>
-                  <h1 className='font-bold text-4xl leading-snug'>Hi, I am Joel,<br/>Software Engineer</h1>
+                  <h1 className='font-bold text-3xl md:text-4xl leading-snug'>Hi, I am Joel,<br/>Software Engineer</h1>
                 </div>
 
                 <div>
@@ -49,7 +50,7 @@ function App() {
           </div>
         </section>
 
-        <section className='bg-green-100'>
+        <section className='bg-green-50'>
           <div className='py-6 px-4 sm:px-8 md:px-16 lg:px-32'>
             <div className='pb-3 flex justify-between items-center'>
               <div>
@@ -64,7 +65,7 @@ function App() {
             <div className='flex flex-col sm:flex-row justify-between items-center gap-4'>
               <div className='bg-white rounded-sm py-4 pl-3 pr-5'>
                 <div className='flex flex-col gap-3'>
-                  <h3 className='font-bold text-2xl'>Making a design system from scratch</h3>
+                  <h3 className='font-bold text-xl md:text-2xl'>Making a design system from scratch</h3>
 
                   <div className='text-lg flex gap-4'>
                     <span>12 Feb 2020</span>
@@ -78,7 +79,7 @@ function App() {
 
               <div className='bg-white rounded-sm py-4 pl-3 pr-5'>
                 <div className='flex flex-col gap-3'>
-                  <h3 className='font-bold text-2xl'>Creating pixel perfect icons in Figma</h3>
+                  <h3 className='font-bold text-xl md:text-2xl'>Creating pixel perfect icons in Figma</h3>
 
                   <div className='text-lg flex gap-4'>
                     <span>12 Feb 2020</span>
@@ -93,62 +94,59 @@ function App() {
           </div>
         </section>
 
-        {/* <section>
-          <div>
-            <h2></h2>
-          </div>
-
-          <div>
-            <div>
-              <div>
-                <img src="" alt="">
-              </div>
-
-              <div>
-                <h3></h3>
-
-                <div>
-                  <span></span>
-                  <span></span>
-                </div>
-                <p></p>
-              </div>
+        <section>
+          <div className='py-4 px-4 sm:px-8 md:px-16 lg:px-32'>
+            <div className='flex justify-center sm:justify-start'>
+              <h2 className='text-xl'>Featured works</h2>
             </div>
 
-            <div>
-              <div>
-                <img src="" alt="">
+            <div className='flex sm:flex-row flex-col gap-4 border-b-2 pb-4 my-4 items-center'>
+              <div className='sm:w-5/12'>
+                <img src={Alumni} alt="project" className='rounded-md object-fit w-full' />
               </div>
 
-              <div>
-                <h3></h3>
+              <div className='flex flex-col gap-3 sm:w-7/12'>
+                <h3 className='font-bold text-2xl md:text-3xl leading-snug'>Designing Dashboards</h3>
 
-                <div>
-                  <span></span>
-                  <span></span>
+                <div className='flex gap-6'>
+                  <span className='bg-dark text-white px-2 md:text-lg rounded-r-full rounded-l-full'>2020</span>
+                  <span className='text-lg md:text-xl text-light'>Dashboard</span>
                 </div>
-                <p></p>
-              </div>
-            </div>
 
-            <div>
-              <div>
-                <img src="" alt="">
-              </div>
-
-              <div>
-                <h3></h3>
-
-                <div>
-                  <span></span>
-                  <span></span>
-                </div>
-                <p></p>
+                <p className='tracking-wide'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
+
+      <footer className='py-6 px-2 sm:px-8 md:px-16 lg:px-32 text-center mt-16 sm:mt-10'>
+        <div className='flex justify-center items-center gap-4'>
+          <a href="http://#">
+            <FontAwesomeIcon icon={brands('facebook')} className='w-7 h-7' />
+          </a>
+
+          <a href="http://#">
+            <FontAwesomeIcon icon={brands('instagram')} className='w-7 h-7' />
+          </a>
+
+          <a href="http://#">
+            <FontAwesomeIcon icon={brands('twitter')} className='w-7 h-7' />
+          </a>
+
+          <a href="http://#">
+            <FontAwesomeIcon icon={brands('linkedin')} className='w-7 h-7' />
+          </a>
+
+          <a href="http://#">
+            <FontAwesomeIcon icon={brands('github')} className='w-7 h-7' />
+          </a>
+        </div>
+
+        <div>
+          <small>Copyright &copy; 2022 All rights reserved</small>
+        </div>
+      </footer>
     </div>
   );
 }
