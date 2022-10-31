@@ -25,26 +25,28 @@ function App() {
       </header>
 
       <main className='mb-10'>
-        <section className='py-4 px-4 sm:px-8 md:px-16 lg:px-32'>
-          <div className='flex justify-center sm:justify-start'>
-            <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6'>Work</h2>
-          </div>
+        <section className='py-4 px-4 sm:px-10 md:px-20 lg:px-48'>
+          <div className='flex flex-col gap-2 sm:gap-4'>
+            <h3 className='font-bold text-2xl md:text-3xl leading-snug'>Designing Dashboards with usability in mind</h3>
 
-          <div className='flex sm:flex-row flex-col gap-4 border-b-2 pb-4 mt-4 mb-8'>
-            <div className='sm:w-5/12 border border-red-500'>
-              <img src={Alumni} alt="project" className='rounded-md object-fit w-full' />
+            <div className='text-sm sm:text-base md:text-lg lg:text-xl flex gap-2 sm:gap-4'>
+              <span className='bg-primary text-white px-2 md:text-lg rounded-r-full rounded-l-full flex items-center'>2020</span>
+              <span className='text-light'>Dashboard, User Experience Design</span>
             </div>
 
-            <div className='flex flex-col gap-3 sm:w-7/12'>
-              <h3 className='font-medium text-2xl md:text-3xl leading-snug'>Designing Dashboards</h3>
+            <p className='tracking-wide'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-              <div className='text-sm sm:text-base md:text-lg flex gap-2 sm:gap-4'>
-                <span className='bg-dark text-white px-2 md:text-lg rounded-r-full rounded-l-full flex items-center'>2020</span>
-                <span className='text-lg md:text-xl text-light'>Dashboard</span>
-              </div>
+            <img src={Alumni} alt="project" className='rounded-md object-fit w-full' />
 
-              <p className='tracking-wide'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+            <h4 className='font-medium text-xl md:text-2xl'>Heading 1</h4>
+
+            <h5 className='font-medium text-lg md:text-xl'>Heading 2</h5>
+
+            <p className='tracking-wide'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+            <img src={Alumni} alt="project" className='rounded-md object-fit w-full' />
+
+            <img src={Alumni} alt="project" className='rounded-md object-fit w-full' />
           </div>
         </section>
       </main>
