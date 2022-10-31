@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
@@ -20,9 +21,9 @@ class Navigation extends React.Component<{}, {isOpen: boolean}> {
 			<header className='mb-2 sm:mb-20 relative'>
         <div className='hidden sm:block'>
           <nav className='w-full h-16 px-16 flex justify-end gap-6 items-center'>
-            <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Works</a>
-            <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Blog</a>
-            <a href="http://#" className='text-xl font-medium hover:text-secondary active:text-primary'>Contact</a>
+						<Link to='#' className='text-xl font-medium hover:text-secondary active:text-primary'>Works</Link>
+            <Link to="#" className='text-xl font-medium hover:text-secondary active:text-primary'>Blog</Link>
+            <Link to="#contact" className='text-xl font-medium hover:text-secondary active:text-primary'>Contact</Link>
           </nav>
         </div>
 

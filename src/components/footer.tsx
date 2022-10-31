@@ -5,7 +5,7 @@ import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 class Footer extends React.Component {
 	render(): React.ReactNode {
 		return (
-			<footer className='py-6 px-2 sm:px-8 md:px-16 lg:px-32 text-center mt-16 sm:mt-10'>
+			<footer id='contact' className='py-6 px-2 sm:px-8 md:px-16 lg:px-32 text-center mt-16 sm:mt-10'>
         <div className='flex justify-center items-center gap-4'>
           <a href="http://#">
             <FontAwesomeIcon icon={brands('facebook')} className='w-7 h-7' />
