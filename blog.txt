@@ -1,0 +1,36 @@
+That entry point for software development in software engineering where you just can't figure out how to get started can be mind boggling and almost stagnating.
+
+I experienced this crippling effect from the software design I was engaged in and my knight in shiny armor was, you guessed it, "Design Patterns."
+
+Design patterns are tried and tested methods of designing software that have now beecome blueprints that one can use as a foundation to build upon,often customizing it to suit ones needs.
+
+I'm not going to go over all of the design patterns because you have far more importants things to do and about 22 of them separated into 3 categories so named creational, structural and behavioral design patterns.
+
+of course creational design patterns deal with object creation mechanisms suitable to a given situation, with structural patterns making life easy for us when we desire relatonships between entities and finally behavioral design patterns will satisfy our need when it come to using the right algorithms and assigning relationships between objects.
+
+first off, this post is meant to be informative so expect to know of their existence and how simple they can make our lives, everyting else is just extra.
+
+also, I'll be posting about these design patterns in chunks. I don't want to overload you with so much information and risk becoming part of your problem when i intended to be your solution.
+
+later.
+
+I'll be focusing on the creational patterns since we may want to start our design by thiniking of ways to catually create those pesky objects, and theres's just 5 which can fit into this small post of mine.
+
+first off, this post is not meant to be educational just informative so expect to know of their existence and how simple they can make our lives, everyting else is just extra.
+
+those of us that develop software can remember a time where we were wondering just how we can extend our class to serve another different but similar purpose wihtout writing eeverything twice, because then we would have to write it thrice and after that? "Hello smelly code."
+Yeah, the factory method will help us here.
+
+here's a classic example about a company with numerous departments.
+alice from human resource is always pissed when she has to keep closing a popup reminder about database backups meant for bob in the software department.
+
+charlie should have created a software department class separate from the human resource class while each inherit common informtion from the department class.
+this way alice can focus on just her duties and bob doesn't have to keep closing popup alice just opened postion we all know dave prepared a 24-paged resumef for.
+congratulations on your promotion dave.
+
+clearly all employees have to respond and report on a task these "tasks" are different. thinking what i'm thinking?
+welcome interface, an abstract class where duties can be shared, but details delivered in confidence.
+
+alice, bob, and charlie is now happy
+
+ so each  forgot to tell bob to wear his tag   now it does make enginering department, bt now bob a Ui designer comes on board
