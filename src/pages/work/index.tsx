@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Alumni from '../../assets/images/alumni.png'
 
 class Work extends React.Component {
@@ -16,7 +17,9 @@ class Work extends React.Component {
             </div>
 
             <div className='flex flex-col gap-3 sm:w-7/12'>
-              <h3 className='font-medium text-2xl md:text-3xl leading-snug'>Designing Dashboards</h3>
+              <h3 className='font-medium text-2xl md:text-3xl leading-snug'>
+                <Link to="/work">Designing Dashboard</Link>
+              </h3>
 
               <div className='text-sm sm:text-base md:text-lg flex gap-2 sm:gap-4'>
                 <span className='bg-dark text-white px-2 md:text-lg rounded-r-full rounded-l-full flex items-center'>2020</span>

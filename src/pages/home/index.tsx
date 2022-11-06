@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Joel from '../../assets/images/joel.jpg'
 import Alumni from '../../assets/images/alumni.png'
 
@@ -38,7 +39,7 @@ class Home extends React.Component {
               </div>
 
               <div>
-                <a href="http://#" className='text-secondary'>View all</a>
+                <Link to="/blog" className='text-secondary'>View all</Link>
               </div>
             </div>
 

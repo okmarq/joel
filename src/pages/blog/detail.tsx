@@ -1,7 +1,7 @@
 import React from 'react'
 import Alumni from '../../assets/images/alumni.png'
 
-class WorkDetail extends React.Component {
+class BlogDetail extends React.Component {
 	render(): React.ReactNode {
 		return (
 			<main>
@@ -34,4 +34,4 @@ class WorkDetail extends React.Component {
 	}
 }
 
-export default WorkDetail
+export default BlogDetail

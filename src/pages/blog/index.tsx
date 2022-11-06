@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Blog extends React.Component {
 	render(): React.ReactNode {
@@ -9,7 +10,9 @@ class Blog extends React.Component {
 
           <div className='border-b-2 pb-4 mt-4 mb-8'>
             <div className='flex flex-col gap-3 pr-4'>
-              <h3 className='font-medium text-2xl md:text-3xl leading-snug'>UI Interactions of the week</h3>
+              <h3 className='font-medium text-2xl md:text-3xl leading-snug'>
+                <Link to="/blog">Interactions of the week</Link>
+              </h3>
 
               <div className='text-sm sm:text-base md:text-lg flex gap-2 sm:gap-4'>
                 <span>12 Feb 2019</span>
