@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <small>Copyright &copy; 2022 All rights reserved</small>
+        <small>Copyright &copy; {new Date().getFullYear()} All rights reserved</small>
       </div>
     </footer>
   )
